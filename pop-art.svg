@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260" viewBox="0 0 400 260">
+  <rect width="400" height="260" fill="#ffe84a"/>
+  <circle cx="90" cy="70" r="45" fill="#ff3b3b" stroke="#111" stroke-width="5"/>
+  <rect x="170" y="40" width="150" height="80" fill="#35a7ff" stroke="#111" stroke-width="5"/>
+  <polygon points="120,190 200,130 280,190 200,230" fill="#ff66c4" stroke="#111" stroke-width="5"/>
+  <text x="185" y="95" font-family="Arial" font-size="30" font-weight="bold" fill="#111">WOW!</text>
+</svg>
