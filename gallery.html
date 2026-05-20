@@ -3,38 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery - CSS Assignment</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Vietnam Gallery</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to Main Content</a>
-
+  <a class="skip-link" href="#main-content">Skip to Main Content</a>
   <header>
-    <h1>Gallery</h1>
-    <nav>
-      <img src="https://picsum.photos/100/100?random=13" alt="Gallery logo">
-      <a href="index.html">Home</a>
-      <a href="parks.html">Parks</a>
-      <a href="gallery.html">Gallery</a>
-    </nav>
+    <h1>Vietnam Gallery</h1>
+    <p>Five simple images for the image requirement.</p>
   </header>
-
-  <main id="main">
-    <h2>Image Grid</h2>
-    <p>This page uses the grid class with two columns.</p>
-
-    <section class="grid">
-      <img src="https://picsum.photos/400/260?random=14" alt="Gallery photo one">
-      <img src="https://picsum.photos/400/260?random=15" alt="Gallery photo two">
-      <img src="https://picsum.photos/400/260?random=16" alt="Gallery photo three">
-      <img src="https://picsum.photos/400/260?random=17" alt="Gallery photo four">
-      <img src="https://picsum.photos/400/260?random=18" alt="Gallery photo five">
-      <img src="https://picsum.photos/400/260?random=19" alt="Gallery photo six">
+  <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="culture.html">Culture</a>
+  </nav>
+  <main id="main-content">
+    <section>
+      <h2>Places and Moments</h2>
+      <div class="grid-gallery">
+        <article>
+          <img src="images/lanterns.svg" alt="Colorful lanterns in a night town">
+          <h3>Lantern Street</h3>
+          <p>Lanterns create a warm and lively travel feeling.</p>
+        </article>
+        <article>
+          <img src="images/market.svg" alt="A small local market with fruit stands">
+          <h3>Local Market</h3>
+          <p>Markets show daily life, food, and community.</p>
+        </article>
+        <article>
+          <img src="images/coffee.svg" alt="A cup of Vietnamese coffee">
+          <h3>Coffee Break</h3>
+          <p>Coffee shops are calm places to rest and talk.</p>
+        </article>
+        <article>
+          <img src="images/river.svg" alt="A river scene with houses and a small boat">
+          <h3>River View</h3>
+          <p>Rivers connect nature, homes, and travel paths.</p>
+        </article>
+        <article>
+          <img src="images/temple.svg" alt="A traditional temple with a red roof">
+          <h3>Temple Visit</h3>
+          <p>Temples are quiet places with cultural value.</p>
+        </article>
+      </div>
     </section>
   </main>
-
   <footer>
-    <p>Created for CSS styling practice.</p>
+    <p>Created for a CSS styling assignment.</p>
   </footer>
 </body>
 </html>

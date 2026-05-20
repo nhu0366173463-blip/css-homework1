@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #1f2933;
+  background: #f7f3e8;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 10px;
+  background: #111827;
+  color: #ffffff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  left: 12px;
+}
+
+header {
+  background: #12355b;
+  color: #ffffff;
+  padding: 28px 20px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  background: #0b1f33;
+  padding: 14px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 2px solid #ffffff;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+nav a:hover,
+nav a:focus {
+  background: #ffd166;
+  color: #0b1f33;
+  transform: translateY(-3px);
+}
+
+main {
+  width: 92%;
+  max-width: 1100px;
+  margin: 28px auto;
+}
+
+section,
+.card {
+  background: #ffffff;
+  padding: 22px;
+  margin-bottom: 22px;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+img {
+  width: 100%;
+  border: 4px solid #12355b;
+  padding: 8px;
+  border-radius: 20px;
+  background: #ffffff;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  justify-content: center;
+  align-items: start;
+}
+
+.grid-gallery article {
+  background: #f7f3e8;
+  padding: 16px;
+  border-radius: 18px;
+}
+
+.flex-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.flex-list article {
+  flex-basis: 300px;
+  background: #f7f3e8;
+  padding: 18px;
+  border-radius: 18px;
+  border: 2px solid #d4a373;
+}
+
+.flex-list article:nth-child(even) {
+  border-radius: 42px 12px;
+  background: #fff8dc;
+}
+
+.grid-gallery article:nth-child(odd) img {
+  border-radius: 50px 10px;
+}
+
+.button-link {
+  display: inline-block;
+  background: #12355b;
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button-link:hover,
+.button-link:focus {
+  background: #bc6c25;
+}
+
+footer {
+  text-align: center;
+  background: #12355b;
+  color: #ffffff;
+  padding: 20px;
+}
+
+@media (max-width: 720px) {
+  .hero,
+  .grid-gallery {
+    grid-template-columns: 1fr;
+  }
+}

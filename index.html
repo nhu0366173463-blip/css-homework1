@@ -3,36 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - CSS Assignment</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Vietnam Travel Notes</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to Main Content</a>
-
+  <a class="skip-link" href="#main-content">Skip to Main Content</a>
   <header>
-    <h1>My Favorite Places</h1>
-    <nav>
-      <img src="https://picsum.photos/100/100?random=1" alt="Small landscape logo">
-      <a href="index.html">Home</a>
-      <a href="parks.html">Parks</a>
-      <a href="gallery.html">Gallery</a>
-    </nav>
+    <h1>Vietnam Travel Notes</h1>
+    <p>A small original website about peaceful places, food, and culture.</p>
   </header>
-
-  <main id="main">
-    <h2>Welcome</h2>
-    <p>This website shows simple places and images styled with CSS. It includes a skip link, grid layout, and flex layout.</p>
-
-    <section class="grid">
-      <img src="https://picsum.photos/400/260?random=2" alt="Nature view with trees">
-      <img src="https://picsum.photos/400/260?random=3" alt="Outdoor landscape view">
-      <img src="https://picsum.photos/400/260?random=4" alt="Path through nature">
-      <img src="https://picsum.photos/400/260?random=5" alt="Calm outdoor scene">
+  <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="culture.html">Culture</a>
+  </nav>
+  <main id="main-content">
+    <section class="hero">
+      <div>
+        <h2>Welcome</h2>
+        <p>This site shares simple travel ideas inspired by Vietnam. The pages use accessible navigation, grid layout, flex layout, hover effects, and image box model styling.</p>
+        <a class="button-link" href="gallery.html">View the Gallery</a>
+      </div>
+      <img src="images/lanterns.svg" alt="Colorful lanterns glowing at night">
+    </section>
+    <section>
+      <h2>Why this topic?</h2>
+      <p>I chose this topic because travel websites can use many images, clear navigation, and short text. This makes it a good project for practicing CSS style.</p>
     </section>
   </main>
-
   <footer>
-    <p>Created for CSS styling practice.</p>
+    <p>Created for a CSS styling assignment.</p>
   </footer>
 </body>
 </html>
