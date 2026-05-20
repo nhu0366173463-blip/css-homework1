@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
+  color: #222222;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px;
+  border: 2px solid #000000;
+}
+
+.skip-link:focus {
+  left: 10px;
+  z-index: 1000;
+}
+
+header {
+  background-color: #1f4e79;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  display: inline-block;
+  width: 80%;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+nav img {
+  width: 10%;
+  min-width: 45px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+nav a {
+  display: inline-block;
+  color: #1f4e79;
+  font-weight: bold;
+  margin: 10px;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+/* Existing li styling from Homework 1 is commented out.
+li {
+  display: inline;
+  margin: 10px;
+}
+*/
+
+main {
+  padding: 25px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 25px;
+}
+
+.grid img {
+  width: 100%;
+  border: 3px solid #1f4e79;
+  border-radius: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.flex img {
+  width: 260px;
+  border: 3px solid #1f4e79;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #1f4e79;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
