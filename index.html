@@ -1,44 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Favorite Art Styles</title>
+    <meta charset="UTF-8">
+    <title>Interactive Photo Gallery</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #image {
+            width: 600px;
+            height: 400px;
+            border: 3px solid #333;
+            margin: 20px auto;
+            line-height: 400px;
+            background-color: white;
+            background-image: url('');
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .preview {
+            width: 180px;
+            height: 120px;
+            object-fit: cover;
+            margin: 10px;
+            border: 2px solid gray;
+            cursor: pointer;
+        }
+
+        .preview:hover {
+            border: 3px solid black;
+        }
+    </style>
+
+    <script>
+        function upDate(previewPic) {
+            console.log("Mouse over image");
+            console.log("Alt text: " + previewPic.alt);
+            console.log("Image source: " + previewPic.src);
+
+            document.getElementById("image").innerHTML = previewPic.alt;
+            document.getElementById("image").style.backgroundImage =
+                "url('" + previewPic.src + "')";
+        }
+
+        function undo() {
+            document.getElementById("image").style.backgroundImage = "url('')";
+            document.getElementById("image").innerHTML =
+                "Hover over an image below to display here.";
+        }
+    </script>
 </head>
+
 <body>
-  <header>
-    <h1>My Favorite Art Styles</h1>
-    <nav>
-      <a href="#main-content">Skip to Main Content</a>
-      <a href="https://www.metmuseum.org/toah/hd/impd/hd_impd.htm" target="_blank">Learn about Impressionism</a>
-    </nav>
-  </header>
 
-  <main id="main-content">
-    <section>
-      <h2>About This Page</h2>
-      <p>This website introduces three art styles that I think are interesting: Impressionism, Surrealism, and Pop Art.</p>
-    </section>
+    <h1>Interactive Photo Gallery</h1>
 
-    <section>
-      <h2>Three Art Styles</h2>
-      <ul>
-        <li>Impressionism uses light colors and soft brush strokes.</li>
-        <li>Surrealism shows dream-like and strange ideas.</li>
-        <li>Pop Art uses bright colors and everyday objects.</li>
-      </ul>
-    </section>
+    <div id="image">
+        Hover over an image below to display here.
+    </div>
 
-    <section>
-      <h2>Image Gallery</h2>
-      <img src="images/impressionism.svg" alt="Simple landscape with soft colors representing Impressionism">
-      <img src="images/surrealism.svg" alt="Dream-like floating eye and moon representing Surrealism">
-      <img src="images/pop-art.svg" alt="Bright comic style shapes representing Pop Art">
-    </section>
-  </main>
+    <img class="preview"
+         src="https://picsum.photos/id/1015/300/200"
+         alt="Beautiful Mountain"
+         onmouseover="upDate(this)"
+         onmouseout="undo()">
 
-  <footer>
-    <p>Created for an HTML final project.</p>
-  </footer>
+    <img class="preview"
+         src="https://picsum.photos/id/1011/300/200"
+         alt="Peaceful Forest"
+         onmouseover="upDate(this)"
+         onmouseout="undo()">
+
+    <img class="preview"
+         src="https://picsum.photos/id/1016/300/200"
+         alt="Ocean Sunset"
+         onmouseover="upDate(this)"
+         onmouseout="undo()">
+
 </body>
 </html>
